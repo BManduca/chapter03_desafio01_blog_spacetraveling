@@ -1,1 +1,72 @@
-// TODO
+.banner {
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;
+}
+
+.loadingNotification {
+  margin: 0 auto;
+  font-size: 2rem;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.post {
+  h1, h2 {
+    font-size: 2.25rem;
+    color: var(--Heading);
+    margin: 3rem 0;
+  }
+
+  p, span, a, ul {
+    font-size: 1.125rem;
+    line-height: 1.8;
+    margin: 1.8rem 0; //espaçando os paragrafos
+  }
+
+  a {
+    color: var(--Highlight);
+  }
+
+  strong {
+    font-weight: 700;
+    color: var(--Body);
+  }
+
+  ul {
+    padding-left: 1.5rem; //para deixar a ul com um tipo de recuo
+
+    li {
+      margin: 0.5rem 0; //espaçando um item do outro da margem
+    }
+  }
+}
+
+.postTop {
+  > h1 {
+    font-size: 3rem;
+    color: var(--Heading);
+    margin-bottom: 1.5rem;
+  }
+
+  > ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    margin-bottom: 4rem;
+
+    & li {
+      margin: 0;
+      font-size: 0.875rem;
+
+      & svg {
+        margin-right: 0.5rem;
+      }
+
+      & + li {
+        margin-left: 1.625rem;
+      }
+    }
+  }
+}

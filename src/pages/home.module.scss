@@ -1,1 +1,58 @@
-// TODO
+.posts {
+  margin-top: 2rem;
+
+  > a {
+    //para os posts ficarem separados
+    display: block;
+  }
+
+  //quando um a vem seguido de outro 
+  a + a {
+    margin-top: 3rem;
+  }
+
+  button {
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--Highlight);
+    margin-top: 4rem;
+  }
+
+}
+
+.post {
+
+  strong {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: var(--Heading);
+  }
+
+  p {
+    margin-top: 0.5rem;
+    font-size: 1.125rem;
+  }
+
+  ul {
+    list-style: none;
+    margin-top: 1.5rem;
+    display: flex; //pra colocar as informações de autor e data lado a lado
+
+    //pegando o li que tem dentro da ul
+    & li {
+      font-size: 0.875rem;
+
+      //dentro do li, 'pegamos' o svg
+      & svg {
+        margin-right: 0.5rem;
+      }
+
+      //pegar uma li após outra li
+      & + li {
+        margin-left: 1.625rem;
+      }
+    }
+  }
+}
